@@ -37,22 +37,32 @@ header .logo a {
 	color: var(--rojo);
 	text-decoration: none;
 	font-size: 40px;
+	margin-left: 10px;
 }
 
 header nav a {
 	color: #aaa;
+	font-size: 20px;
 	text-decoration: none;
-	margin-right: 25px;
+	margin-left: 25px;
+}
+
+header nav.nav-menu {
+	flex: 1;
+	margin-left: 40px;
 }
 
 header nav a:hover,
-header nav a.activo {
+header nav a.activo,
+header nav.nav-menu-right a {
 	color: #ffffff;
 }
 
 /*-- MAIN MOVIE --*/
 
 .main-movie {
+	width: 95%;
+	margin: auto;
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #ffffff;
@@ -85,7 +95,7 @@ header nav a.activo {
 }
 
 .main-movie .button {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(34, 34, 34, 0.5);
 	border: none;
 	border-radius: 0.32em;
 	padding: 0.93em 1.87em;
