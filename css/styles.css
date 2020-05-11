@@ -11,10 +11,11 @@
 
 body {
 	background: var(--fondo);
+	font-family: "Open Sans", sans-serif;
 }
 
 .container {
-	width: 90%;
+	width: 95%;
 	margin: auto;
 }
 
@@ -31,6 +32,7 @@ header .container {
 }
 
 header .logo a {
+	font-family: "Bebas Neue", cursive;
 	font-weight: normal;
 	color: var(--rojo);
 	text-decoration: none;
@@ -54,8 +56,8 @@ header nav a.activo {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #ffffff;
-	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-		url(img/interestellar.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+		url(../img/banner.jpg);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
