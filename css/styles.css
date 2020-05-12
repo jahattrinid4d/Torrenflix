@@ -107,8 +107,7 @@ header nav.nav-menu-right a {
 }
 
 .main-movie .button:hover {
-	background: #ffffff;
-	color: #000000;
+	background: var(--rojo);
 }
 
 .main-movie .button i {
