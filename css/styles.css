@@ -31,12 +31,9 @@ header .container {
 	align-items: center;
 }
 
-header .logo a {
-	font-family: "Bebas Neue", cursive;
-	font-weight: normal;
+header .logo a img {
 	color: var(--rojo);
-	text-decoration: none;
-	font-size: 40px;
+	width: 200px;
 	margin-left: 10px;
 }
 
