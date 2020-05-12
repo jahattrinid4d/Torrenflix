@@ -67,7 +67,7 @@ header nav.nav-menu-right a {
 	min-height: 40.62em;
 	color: #ffffff;
 	background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../img/banner.jpg);
+		url(../img/movies/star-wars-9/main-banner.png);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -114,4 +114,104 @@ header nav.nav-menu-right a {
 .main-movie .button i {
 	margin-right: 1.25em;
 }
-/*-- HOLA --*/
+
+/*-- TITLE CONTROLS CONTAINER--*/
+
+.title-controls-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.title-controls-container h3 {
+	color: #ffffff;
+	font-size: 30px;
+}
+
+.title-controls-container .indicadores button {
+	background: #ffffff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.title-controls-container .indicadores button:hover,
+.title-controls-container .indicadores button.activo {
+	background: var(--rojo);
+}
+
+/*-- MAIN CONTAINER / ANGLES--*/
+.recomended-movies {
+	margin-bottom: 70px;
+}
+
+.recomended-movies .main-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.recomended-movies .main-container .angle-left,
+.recomended-movies .main-container .angle-right {
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 500;
+	transition: 0.2s ease all;
+}
+
+.recomended-movies .main-container .angle-left {
+	left: 0;
+}
+
+.recomended-movies .main-container .angle-right {
+	right: 0;
+}
+
+.recomended-movies .main-container .angle-left:hover,
+.recomended-movies .main-container .angle-right:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+/* -- CAROUSEL --*/
+
+.recomended-movies .carousel-container {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.recomended-movies .carousel-container .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.recomended-movies .carousel-container .carousel .movie {
+	min-width: 20%;
+	transition: 0.3s ease all;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	margin-right: 4px;
+}
+
+.recomended-movies .carousel-container .carousel .movie.hover {
+	transform: scale(1.15);
+	transform-origin: center;
+}
+
+.recomended-movies .carousel-container .carousel .movie img {
+	width: 100%;
+	vertical-align: top;
+	margin-right: 4px;
+}
+
+/* ---- MEDIA QUERIES ----*/
