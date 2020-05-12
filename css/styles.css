@@ -83,6 +83,7 @@ header nav.nav-menu-right a {
 .main-movie .title {
 	font-weight: 600;
 	font-size: 3.12em;
+	max-width: 40%;
 	margin-bottom: 0.4em;
 }
 
@@ -90,7 +91,7 @@ header nav.nav-menu-right a {
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.75em;
-	max-width: 50%;
+	max-width: 40%;
 	margin-bottom: 1.25em;
 }
 
