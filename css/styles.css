@@ -1,3 +1,4 @@
+/* ---- GENEARL ---- */
 :root {
 	--rojo: #e50914;
 	--fondo: #141414;
@@ -20,7 +21,6 @@ body {
 }
 
 /*-- HEADER --*/
-
 header {
 	padding: 30px 0;
 }
@@ -56,7 +56,6 @@ header nav.nav-menu-right a {
 }
 
 /*-- MAIN MOVIE --*/
-
 .main-movie {
 	width: 95%;
 	margin: auto;
@@ -113,7 +112,6 @@ header nav.nav-menu-right a {
 }
 
 /*-- TITLE CONTROLS CONTAINER--*/
-
 .title-controls-container {
 	display: flex;
 	justify-content: space-between;
@@ -139,7 +137,7 @@ header nav.nav-menu-right a {
 	background: var(--rojo);
 }
 
-/*-- MAIN CONTAINER / ANGLES--*/
+/* ---- MAIN CONTAINER ---- */
 .recomended-movies {
 	margin-bottom: 70px;
 }
@@ -150,6 +148,7 @@ header nav.nav-menu-right a {
 	position: relative;
 }
 
+/* ---- ANGLES ---- */
 .recomended-movies .main-container .angle-left,
 .recomended-movies .main-container .angle-right {
 	position: absolute;
@@ -180,7 +179,6 @@ header nav.nav-menu-right a {
 }
 
 /* -- CAROUSEL --*/
-
 .recomended-movies .carousel-container {
 	width: 100%;
 	padding: 20px 0;
@@ -209,6 +207,18 @@ header nav.nav-menu-right a {
 	width: 100%;
 	vertical-align: top;
 	margin-right: 4px;
+}
+
+/* ---- COMING SOON SECTION ---- */
+.title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.title-container h3 {
+	color: #ffffff;
+	font-size: 30px;
 }
 
 /* ---- MEDIA QUERIES ----*/

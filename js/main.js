@@ -4,7 +4,7 @@ const movies = document.querySelectorAll(".movie");
 const angleLeft = document.getElementById("angle-left");
 const angleRight = document.getElementById("angle-right");
 
-// --- EVEN LISTENER FOR AHE ANGLE LEFT
+// ---- EVENT LISTENER FOR AHE ANGLE LEFT ----
 angleRight.addEventListener("click", () => {
 	fila.scrollLeft += fila.offsetWidth;
 
@@ -16,7 +16,7 @@ angleRight.addEventListener("click", () => {
 	}
 });
 
-// --- EVEN LISTENER FOR AHE ANGLE RIGHT
+// ---- EVEN LISTENER FOR AHE ANGLE RIGHT ----
 angleLeft.addEventListener("click", () => {
 	fila.scrollLeft -= fila.offsetWidth;
 
@@ -28,7 +28,7 @@ angleLeft.addEventListener("click", () => {
 	}
 });
 
-// PAGINACION
+// -- PAGINACION --
 
 const pageNumber = Math.ceil(movies.length / 5);
 
@@ -49,7 +49,7 @@ for (let i = 0; i < pageNumber; i++) {
 	});
 }
 
-//  HOVER
+// -- HOVER --
 
 movies.forEach((movie) => {
 	movie.addEventListener("mouseenter", (e) => {
