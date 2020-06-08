@@ -62,8 +62,7 @@ header nav.nav-menu-right a {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #ffffff;
-	background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../img/movies/star-wars-9/main-banner.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);		
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
