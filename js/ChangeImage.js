@@ -1,9 +1,15 @@
-var hour = new Date().getHours();
+var hour = new Date().getMinutes();
+console.log(hour);
+var x = 0;
+var image;
+var i = 0;
+
+var iteraciones = 0;
 
 
 
-   
-    var image = new Array();
+
+    image = new Array();
     image[0] = "../img/movies/sonic/main-banner.png";
     image[1] = "../img/movies/1917/main-banner.png";
     image[2] = "../img/movies/ad-astra/main-banner.png";
@@ -11,73 +17,57 @@ var hour = new Date().getHours();
     image[4] = "../img/movies/joker/main-banner.png";
     var size = image.length;
     
-    
-    
-
-
-
-
-
 var horadeldia = 0;
 
 
-console.log(hour);
-$(document).ready(function(){
-   
-
-   
-    if(hour > 6 && hour <= 12){
-   
-        $("#main").css('background',"url('" + image[localStorage.getItem("z")] + "')");    
-        horadeldia = 1;
-    }else if(hour > 12 && hour <= 18){
-         horadeldia = 2;
-        $("#main").css('background',"url('" + image[localStorage.getItem("y")] + "')");   
-    }else{
-        $("#main").css('background',"url('" + image[localStorage.getItem("x")] + "')"); 
-          horadeldia = 3;
-    }
 
 
-//$("#main").css('background',"url('" + image[x] + "')");
-if(horadeldia == 1){
-        var z = Math.floor(size*Math.random());
-        var tiempo = setInterval(function(){
-        console.log("z : " + z);
-        localStorage.setItem("z",z);
-        console.log(localStorage.getItem("z"));
-        x = localStorage.getItem("z");
-       
-      
-    },10000);  
-}else if(horadeldia == 2)
-{
-       var y = Math.floor(size*Math.random());
-       var tiempo = setInterval(function(){    
-        console.log("y : " + y);
-        localStorage.setItem("y",y);
-        console.log(localStorage.getItem("y"));
-        y = localStorage.getItem("y");
-       
-      
-    },10000);  
-}else{
-    var x = Math.floor(size*Math.random());
-   var tiempo = setInterval(function(){
-    console.log("x : " + x);
-    localStorage.setItem("x",x);
-    console.log(localStorage.getItem("x"));
-    x = localStorage.getItem("x");
-   
-   
+var state = history.state || {};
+var reloadCount = state.reloadCount || 0;
+if(reloadCount > 5){
+    reloadCount = 0;
+    
+}
+console.log(reloadCount);
+if (performance.navigation.type === 1) { // Reload
+    state.reloadCount = ++reloadCount;
+    history.replaceState(state, null, document.URL);
   
-},10000);  
+   
+} else if (reloadCount) {
+    delete state.reloadCount;
+    reloadCount = 0;
+  
+    history.replaceState(state, null, document.URL);
+
+}
+console.log(reloadCount);
+if(reloadCount == 1){
+    console.log("Capturando primera imagen");
+    x = Math.floor(size*Math.random());
+   
+    $("#main").css('background',"url('" + image[x] + "')"); 
+    localStorage.setItem("x",x);
+
+
+}else{
+    console.log(" No ha sido posible cargar otra imagen, porque ya está sorteado");
+    $("#main").css('background',"url('" + image[localStorage.getItem("x")] + "')"); 
+ 
+
 }
 
-});
 
 
 
-    
+
+
+
+
+
+
+
+
+
 
 
