@@ -1,0 +1,34 @@
+{
+  "name": "Torrenflix",
+  "version": "1.0.0",
+  "description": "El Netflix de los torrents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahat-trinidad/Torrenflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahat-trinidad/Torrenflix/issues"
+  },
+  "homepage": "https://github.com/jahat-trinidad/Torrenflix#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.0",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
